@@ -1,6 +1,6 @@
 module.exports = {
-  entry: './main.js',
-  output: { path: __dirname, filename: 'bundle.js' },
+  entry: './src/main.js',
+  output: { path: __dirname+"/dist/js/", filename: 'bundle.js' },
   devtool: "#inline-source-map",
   module: {
     loaders: [
@@ -13,5 +13,9 @@ module.exports = {
         }
       }
     ]
+  },
+  devServer: {
+     contentBase: './dist/',
+     port:3001
   }
 }
