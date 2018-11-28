@@ -1,4 +1,14 @@
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["fcklib"] = factory();
+	else
+		root["fcklib"] = factory();
+})(window, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -90,11 +100,11 @@
 /*!*********************!*\
   !*** ./src/main.ts ***!
   \*********************/
-/*! no exports provided */
+/*! exports provided: main */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sub__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sub */ \"./src/sub.ts\");\n\r\nObject(_sub__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n\n\n//# sourceURL=webpack:///./src/main.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"main\", function() { return main; });\n/* harmony import */ var _sub__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sub */ \"./src/sub.ts\");\n\r\nfunction main() {\r\n    Object(_sub__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n}\r\n\n\n//# sourceURL=webpack://fcklib/./src/main.ts?");
 
 /***/ }),
 
@@ -106,8 +116,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sub
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return subFunc; });\nfunction subFunc() {\r\n    console.log(\"subFunc\");\r\n}\r\n\n\n//# sourceURL=webpack:///./src/sub.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return subFunc; });\nfunction subFunc() {\r\n    console.log(\"subFunc\");\r\n}\r\n\n\n//# sourceURL=webpack://fcklib/./src/sub.ts?");
 
 /***/ })
 
 /******/ });
+});
