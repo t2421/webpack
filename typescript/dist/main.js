@@ -96,6 +96,18 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/Test.ts":
+/*!*********************!*\
+  !*** ./src/Test.ts ***!
+  \*********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar Greeter = /** @class */ (function () {\r\n    function Greeter(message) {\r\n        this.greeting = message;\r\n    }\r\n    Greeter.prototype.greet = function () {\r\n        return \"Hello, \" + this.greeting;\r\n    };\r\n    return Greeter;\r\n}());\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (Greeter);\r\n\n\n//# sourceURL=webpack://fcklib/./src/Test.ts?");
+
+/***/ }),
+
 /***/ "./src/main.ts":
 /*!*********************!*\
   !*** ./src/main.ts ***!
@@ -104,7 +116,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"main\", function() { return main; });\n/* harmony import */ var _sub__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sub */ \"./src/sub.ts\");\n\r\nfunction main() {\r\n    Object(_sub__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n}\r\n\n\n//# sourceURL=webpack://fcklib/./src/main.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"main\", function() { return main; });\n/* harmony import */ var _sub__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sub */ \"./src/sub.ts\");\n/* harmony import */ var _Test__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Test */ \"./src/Test.ts\");\n\r\n\r\nfunction main() {\r\n    Object(_sub__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n    var greet = new _Test__WEBPACK_IMPORTED_MODULE_1__[\"default\"](\"hello\");\r\n    greet.greet();\r\n}\r\n\n\n//# sourceURL=webpack://fcklib/./src/main.ts?");
 
 /***/ }),
 
