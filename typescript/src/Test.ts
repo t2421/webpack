@@ -1,3 +1,5 @@
+import axios from 'axios';
+console.log(axios);
 export default class Greeter {
     private greeting: string;
     constructor(message: string) {
